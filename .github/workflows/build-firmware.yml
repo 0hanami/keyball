@@ -23,7 +23,7 @@ jobs:
 
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/qmk/qmk_cli:1.1.5
+      image: ghcr.io/qmk/qmk_cli:1d7f5b0080c3
 
     steps:
 
@@ -37,6 +37,7 @@ jobs:
       run: ln -s $(pwd)/qmk_firmware/keyboards/keyball __qmk__/keyboards/keyball
 
     - name: Compile and link
+      run: qmk setup
       run: qmk compile -j 4 -kb keyball/${{ inputs.keyboard }} -km ${{ inputs.keymap }}
 
     - name: Archive built firmware
