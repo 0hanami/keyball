@@ -18,3 +18,7 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 ## Special keycodes
 
 See [Special Keycode](../lib/keyball/keycodes.md) file.
+
+
+## 参考になるサイト
+https://mazcon.hatenablog.com/entry/2023/11/10/080000
